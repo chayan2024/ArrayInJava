@@ -6,7 +6,7 @@ public class FindTheLargestAndMinimumNumberInArray {
             int array[]={3,1,22,44,66,77,88,99,23,33,7,6666};
             int minimum=array[0];
             int max=array[0];
-            for (int i = 0; i < array.length; i++) {
+            for (int i = 1; i < array.length; i++) {
                 if (array[i]>max || array[i]<minimum){
                     max=array[i];
                 }
