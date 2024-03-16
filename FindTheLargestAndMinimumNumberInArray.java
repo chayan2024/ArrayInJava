@@ -16,6 +16,5 @@ public class FindTheLargestAndMinimumNumberInArray {
             }
         System.out.println("Maximum element in array"+max);
         System.out.println("Minimum element in array"+minimum);
-
     }
 }
