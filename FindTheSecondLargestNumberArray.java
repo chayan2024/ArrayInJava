@@ -3,21 +3,18 @@ public class FindTheSecondLargestNumberArray {
     public static void main(String[] args) {
         System.out.println("Find the Second Largest Number in an Array");
 
-     //   int[] arr = {1, 2, 3, 4, 5, 6};
         int[] arr = {3, 2, 5, 7,70, 3, 9};
-
-        int largest=Integer.MIN_VALUE;
         int secLargest=Integer.MIN_VALUE;
-
-        for (int num:arr){
-            if (num>largest){
+        int largest=Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length ; i++) {
+            if (arr[i]>largest){
                 secLargest=largest;
-                largest=num;
-            } else if (num>secLargest && num!=largest) {
-                secLargest=num;
+                largest=arr[i];
+            }else if (arr[i]>secLargest && largest!=arr[i]){
+                secLargest=arr[i];
             }
         }
-        System.out.println("maximum value:"+secLargest);
+        System.out.println("Find the Second Largest Number in an Array:  "+secLargest);
     }
 
 }
